@@ -1,88 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Zero To Hero</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #e0e0e0;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 640px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(90deg, #00d2ff, #7b2ff7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .badge {
-            display: inline-block;
-            margin: 1rem 0 2rem;
-            padding: 0.4rem 1.2rem;
-            border: 1px solid #7b2ff7;
-            border-radius: 999px;
-            font-size: 0.9rem;
-            color: #c4b5fd;
-            letter-spacing: 0.05em;
-        }
-        .cards {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 1.5rem 1.8rem;
-            min-width: 150px;
-            flex: 1;
-        }
-        .card span {
-            display: block;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #9ca3af;
-            margin-bottom: 0.4rem;
-        }
-        .card strong {
-            font-size: 1.25rem;
-            color: #f9fafb;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Session</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family: "Segoe UI", Arial, sans-serif;
+background: radial-gradient(circle at top, #1f2937, #020617);
+color:white;
+overflow:hidden;
+}
+
+.background-blur{
+position:absolute;
+width:600px;
+height:600px;
+background:linear-gradient(45deg,#3b82f6,#9333ea);
+filter:blur(180px);
+opacity:0.4;
+animation:move 12s infinite alternate ease-in-out;
+}
+
+@keyframes move{
+0%{transform:translate(-200px,-100px);}
+100%{transform:translate(200px,150px);}
+}
+
+.container{
+position:relative;
+text-align:center;
+padding:60px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+max-width:600px;
+}
+
+h1{
+font-size:3rem;
+font-weight:700;
+background:linear-gradient(90deg,#38bdf8,#a78bfa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:15px;
+}
+
+h2{
+font-weight:400;
+font-size:1.4rem;
+color:#e2e8f0;
+}
+
+.highlight{
+color:#60a5fa;
+font-weight:600;
+}
+
+.button{
+margin-top:30px;
+display:inline-block;
+padding:12px 28px;
+border-radius:30px;
+background:linear-gradient(90deg,#3b82f6,#8b5cf6);
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.button:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>DevOps Zero To Hero</h1>
-        <div class="badge">Josh Batch 10</div>
-        <div class="cards">
-            <div class="card">
-                <span>Framework</span>
-                <strong>Flask 3.1</strong>
-            </div>
-            <div class="card">
-                <span>Runtime</span>
-                <strong>Python 3.14</strong>
-            </div>
-            <div class="card">
-                <span>Deploy</span>
-                <strong>AWS ECS</strong>
-            </div>
-        </div>
-    </div>
+
+<div class="background-blur"></div>
+
+<div class="container">
+<h1>Welcome</h1>
+<h2>DevOps Session with <span class="highlight">Suchith</span> 🚀</h2>
+
+<a class="button">Let's Begin</a>
+</div>
+
 </body>
 </html>
